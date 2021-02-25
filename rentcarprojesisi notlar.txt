@@ -1,0 +1,48 @@
+Projeye yeni nesne eklerken yapılması gerekenler
+
+1. Tabloyu oluştur veritabanından
+2. Entitiesde classını oluştur
+3. DataAccessde abstract klosürüne nesnenin interfacei oluşturulur
+4. DataAccessde conrete klosüründeki entity klosürüne nesnenin entity classını oluştur
+5. Aynı dosyadaki context dosyasından eklediğin nesneyle veri tabanını bağla
+6. Bussiness katmanında abstract klosüründe nesnenin soyutunu oluştur
+
+
+
+Projeye asp.net ekleme
+1.tablonun controllerini ekle
+2.Startup classından servisleri configure et
+
+
+
+
+Not
+{{HTTPStatus(201, "201 Oluşturuldu")}}
+"İstek başarılı oldu ve bunun sonucunda yeni bir kaynak oluşturuldu."
+Genellikle POST veya PUT isteklerinden sonra gönderilen yanıt budur.
+
+
+301
+Moved Permanently
+Kalıcı Taşındı
+Bir kaynağın (veya sayfanın) kalıcı olarak başka bir yere taşındığını bildirir ve o yere yönlendirme sağlar.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ return new List<Car>
+            {
+                new Car{ CarId=1, Description="Mercedes"},
+                new Car{ CarId=2, Description="BMW"},
+            };
